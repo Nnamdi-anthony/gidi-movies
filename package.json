@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "scripts": {
+    "refresh:autoloader": "composer dump-autoload",
+    "watch-prod": "yarn run production -- --watch",
+    "dev": "yarn run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "yarn run development -- --watch",
+    "watch-poll": "yarn run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "yarn run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bourbon": "^5.0.1",
+    "bourbon-neat": "^2.1.0",
+    "cheerio": "^1.0.0-rc.2",
+    "compass-mixins": "^0.12.10",
+    "cross-env": "^5.2.0",
+    "eslint": "^4.19.1",
+    "jquery": "^3.3.1",
+    "jshint": "^2.9.5",
+    "laravel-mix": "^2.1.11",
+    "lazyload": "^2.0.0-beta.2",
+    "mq-sass": "^0.8.0",
+    "puppeteer": "^1.10.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "sass-mq": "^5.0.0",
+    "sweetalert2": "^7.22.2",
+    "vue": "^2.5.16",
+    "ws": "^6.1.2"
+  }
+}

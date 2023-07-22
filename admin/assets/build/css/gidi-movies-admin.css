@@ -1,0 +1,118 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+/**
+  *==================================
+  * Setup the GRID 
+  *==================================
+  */
+
+.gm-container::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.gm-container.space {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.gm-container.clip {
+  overflow: hidden;
+}
+
+.gm-container .gm-row {
+  margin-left: -20px;
+  margin-right: -20px;
+  width: calc(100% + 40px);
+}
+
+.gm-container .gm-row.space {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.gm-container .single-movie-column {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+}
+
+@media (min-width: 46.25em) {
+  .gm-container .single-movie-column {
+    width: calc(50% - 30px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .gm-container .single-movie-column {
+    width: calc(25% - 25px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+/**
+   *==================================
+   * General Styles
+   *==================================
+   */
+
+/**
+ *==================================
+ * Utilities
+ *==================================
+ */
+
+.button-danger {
+  background: #d31f0d !important;
+  border-color: #f12c18 #f13522 #f13522 !important;
+  -webkit-box-shadow: 0 1px 0 #f13522 !important;
+          box-shadow: 0 1px 0 #f13522 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  text-shadow: 0 -1px 1px #f13522, 1px 0 1px #f13522, 0 1px 1px #f13522, -1px 0 1px #f13522 !important;
+}
+
+.gimme-space {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gimme-space-top {
+  margin-top: 20px;
+}
+
+.gimme-space-bottom {
+  margin-bottom: 20px;
+}
+
+.take-space {
+  margin: 0;
+}
+
+.take-left {
+  float: left;
+}
+
+.take-right {
+  float: right;
+}
+
+.lh-1 {
+  line-height: 1em;
+}
+
+.lh-2 {
+  line-height: 2em;
+}
+
+.lh-3 {
+  line-height: 3em;
+}
+

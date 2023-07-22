@@ -1,0 +1,20 @@
+{
+  "name": "umoke10/gidi_movies",
+  "description": "Plugin for fetching movies",
+  "require": {
+    "fabpot/goutte": "^3.2",
+    "psr/log": "^1.1",
+    "symfony/process": "^4.2",
+    "flutterwave/flutterwave-php": "dev-master"
+  },
+  "autoload": {
+    "classmap": [
+      "admin",
+      "includes",
+      "public"
+    ]
+  },
+  "require-dev": {
+    "php-console/php-console": "^3.1"
+  }
+}

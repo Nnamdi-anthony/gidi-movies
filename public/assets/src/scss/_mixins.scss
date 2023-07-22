@@ -1,0 +1,19 @@
+// custom mixins
+@mixin clearings($value: 50px) {
+    margin-left: -#{$value};
+    margin-right: -#{$value};
+    padding-left: #{$value};
+    padding-right: #{$value};
+}
+
+@mixin min-height($value: 100px) {
+    min-height: $value;
+}
+
+@mixin make-bg-color {
+    background-color: $gm_base_color;
+}
+
+@mixin make-color {
+    color: $gm_base_color;
+}

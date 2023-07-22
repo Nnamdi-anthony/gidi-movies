@@ -1,0 +1,93 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+$gm_base_color: #d31f0d;
+$secondary-color: #333; // grid configs
+$max_columns: 12;
+$mq-breakpoints: ( mobile: 320px, tablet: 740px, desktop: 980px, wide: 1300px); // impor the vendors styles
+@import "~compass-mixins/lib/compass";
+@import "~bourbon/core/bourbon";
+@import "~bourbon-neat/core/neat";
+@import "~mq-sass/stylesheets/mq-sass";
+@import "~sass-mq/mq";
+/**
+  *==================================
+  * Setup the GRID 
+  *==================================
+  */
+
+.gm-container {
+    @include grid-container;
+    &.space {
+        @include padding(null 20px);
+    }
+    &.clip {
+        overflow: hidden;
+    }
+    .gm-row {
+        @include grid-collapse;
+        &.space {
+            @include padding(null 20px);
+        }
+    }
+    .single-movie-column {
+        @include grid-column(12);
+        @include mq($from: tablet) {
+            @include grid-column(6);
+        }
+        @include mq($from: desktop) {
+            @include grid-column(3);
+        }
+    }
+}
+
+/**
+   *==================================
+   * General Styles
+   *==================================
+   */
+
+/**
+ *==================================
+ * Utilities
+ *==================================
+ */
+
+.button-danger {
+    background: $gm_base_color !important;
+    border-color: lighten($gm_base_color, 8%) lighten($gm_base_color, 10%) lighten($gm_base_color, 10%) !important;
+    box-shadow: 0 1px 0 lighten($gm_base_color, 10%) !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    text-shadow: 0 -1px 1px lighten($gm_base_color, 10%), 1px 0 1px lighten($gm_base_color, 10%), 0 1px 1px lighten($gm_base_color, 10%), -1px 0 1px lighten($gm_base_color, 10%) !important;
+}
+
+.gimme-space {
+    @include margin(20px null);
+    &-top {
+        @include margin(20px null null);
+    }
+    &-bottom {
+        @include margin(null null 20px);
+    }
+}
+
+.take-space {
+    @include margin(0);
+}
+
+.take-left {
+    float: left;
+}
+
+.take-right {
+    float: right;
+}
+
+@for $countVar from 1 through 3 {
+    .lh-#{$countVar} {
+        line-height: #{$countVar}em;
+    }
+}

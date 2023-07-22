@@ -1,0 +1,256 @@
+/**
+ *==================================
+ * Jumbtron Header
+ *==================================
+ */
+
+.jumbotron-header {
+  a {
+    color: lighten(#333333, 25%);
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &-wrapper {
+    @include clearings();
+    position: relative;
+    z-index: 1;
+  }
+
+  /**
+     *==================================
+     * custom background image
+     *==================================
+     */
+  background-image: radial-gradient(circle at 20% 50%,
+  rgba(lighten(#aaaaaa, 32%), 0.98) 0%,
+  rgba(lighten(#aaaaaa, 32%), 0.88) 100%);
+
+  &::before {
+    filter: opacity(100) grayscale(100%) contrast(130%);
+    content: "";
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    will-change: opacity;
+    transition: filter 1s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: block;
+  }
+
+  /**
+     *==================================
+     * other stylings
+     *==================================
+     */
+  @include min-height(400px);
+  @include clearings();
+  @include margin(-30px null null);
+
+  .poster-image {
+    img {
+      border-radius: 10px; // max-width: 80%;
+      height: 400px;
+    }
+  }
+
+  .movie-title {
+    @include margin(0);
+    @include make-color;
+  }
+
+  .movie-tagline {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  .movie {
+    &-overview {
+      color: #333333;
+    }
+  }
+
+  .movie-action-buttons-wrapper {
+    margin-top: 30px;
+  }
+
+  .take-airr {
+    @include margin(20px null);
+  }
+}
+
+/**
+ *==================================
+ * tab section
+ *==================================
+ */
+
+.large-tab-section {
+  @include clearings();
+  background-color: #ffffff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  @include min-height(60px);
+  margin-bottom: 10px;
+
+  .container {
+    @include margin(10px null);
+  }
+
+  box-shadow: 0 8px 6px -6px black;
+
+  .movies-tab-buttons {
+    a {
+      color: #333333;
+      border: 0;
+      border-radius: 19px;
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      height: 38px;
+      line-height: 38px;
+      padding: 0 25px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      text-shadow: 0 1px 1px rgba(35, 35, 35, 0.2);
+      transition: all 0.2s ease;
+
+      &:hover,
+      &:focus {
+        color: $gm_base_color;
+      }
+    }
+
+    li.active {
+      a {
+        background-color: $gm_base_color;
+        color: white;
+
+        &:hover,
+        &:focus {
+          background-color: lighten($gm_base_color, 0.8);
+        }
+      }
+    }
+  }
+}
+
+/**
+ *==================================
+ * tab content
+ *==================================
+ */
+
+.large-tab-content-sidebar {
+  @include clearfix(); // position: relative;
+  margin-bottom: 50px;
+
+  .container {
+    margin-top: 10px;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    h5 {
+      font-size: 1.3em;
+      font-weight: bolder;
+    }
+  }
+
+  .vr-divide {
+    top: 100px;
+    right: 312px;
+    height: 150px;
+  }
+
+  .scrollable-video-wrapper,
+  .scrollable-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .scroll-video-gallery,
+  .scroll-image-gallery {
+    height: 300px;
+    width: 1000px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-x: scroll;
+
+    .single-video-frame,
+    .single-image-frame {
+      display: inline-block;
+      width: 400px;
+      margin-right: 5px;
+    }
+  }
+}
+
+/**
+ *==================================
+ * similar movies 
+ *==================================
+ */
+
+.similar-movies-box {
+  @include clearfix();
+  margin-bottom: 10px;
+  position: relative;
+
+  .similar-movies-title {
+    left: 50%;
+
+    h3 {
+      background-color: rgba(black, 0.4);
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+      left: -50%;
+    }
+
+    color: white;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+  }
+
+  .similar-movies-action {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+
+    button {
+      left: -50% !important;
+      position: relative;
+    }
+  }
+
+  img {
+    border-radius: 10px;
+    height: 350px !important;
+  }
+}
+
+.cinemas-showing-movie {
+  .similar-movie-title {
+    position: static;
+
+    h3 {
+      position: static;
+    }
+  }
+}
+
+.now-showing-time {}

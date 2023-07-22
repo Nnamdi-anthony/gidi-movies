@@ -1,0 +1,115 @@
+// utilities
+/**
+ *==================================
+ * for the site-wide damp red button
+ *==================================
+ */
+
+.damp-button {
+  background-color: $gm_base_color !important;
+}
+
+/**
+ *==================================
+ * make any text red color
+ *==================================
+ */
+
+.make-it-red {
+  @include make-color;
+}
+
+/**
+ *==================================
+ * mkae text bold
+ *==================================
+ */
+
+.make-it-bold {
+  font-weight: bold;
+}
+
+/**
+ *==================================
+ * make it capitalize
+ *==================================
+ */
+
+.make-it-capitalize {
+  text-transform: capitalize;
+}
+
+/**
+ *==================================
+ * make the font slim
+ *==================================
+ */
+
+.make-font-slim {
+  font-weight: 500;
+}
+
+/**
+ *==================================
+ * Vertical Divider
+ *==================================
+ */
+
+.vr-divide {
+  // border-left: 1px solid #38546d; // border-right: 1px solid #16222c;
+  border-right: 1px solid gray;
+  height: 80px;
+  position: absolute;
+  right: 249px;
+  top: 10px;
+}
+
+/**
+ *==================================
+ * round-images
+ *==================================
+ */
+
+.gm-round-images {
+  border-radius: 10px;
+}
+
+/*--------------------------------------------------------------
+## Owl Carousel Overides
+--------------------------------------------------------------*/
+
+.owl-nav {
+  top: -85px;
+  background-color: #fff;
+  right: 0;
+  position: absolute;
+  font-size: 20px !important;
+
+  %combine {
+    // border-radius: 0 !important;
+    display: inline-block !important;
+    color: #eaeaea !important;
+    background-color: $gm_base_color !important;
+    text-align: center !important;
+    transition: all 0.5s ease !important;
+    width: 36px !important;
+    height: 36px !important;
+    margin: 0 !important;
+    line-height: 36px !important;
+    outline: 0 !important;
+
+    &:hover,
+    &:focus {
+      background-color: lighten($gm_base_color, 10%) !important;
+    }
+  }
+
+  .owl-next {
+    @extend %combine;
+  }
+
+  .owl-prev {
+    margin-right: 5px !important;
+    @extend %combine;
+  }
+}

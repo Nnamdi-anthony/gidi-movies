@@ -1,0 +1,1 @@
+<fetch-movies url="/movie/now_playing" movie-type="Now Showing" heading="showing the movies now in the cinemas"></fetch-movies>

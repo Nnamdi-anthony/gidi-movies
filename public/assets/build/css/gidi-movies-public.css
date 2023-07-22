@@ -1,0 +1,620 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+/**
+ *==================================
+ * for the site-wide damp red button
+ *==================================
+ */
+
+.damp-button {
+  background-color: #d31f0d !important;
+}
+
+/**
+ *==================================
+ * make any text red color
+ *==================================
+ */
+
+.make-it-red {
+  color: #d31f0d;
+}
+
+/**
+ *==================================
+ * mkae text bold
+ *==================================
+ */
+
+.make-it-bold {
+  font-weight: bold;
+}
+
+/**
+ *==================================
+ * make it capitalize
+ *==================================
+ */
+
+.make-it-capitalize {
+  text-transform: capitalize;
+}
+
+/**
+ *==================================
+ * make the font slim
+ *==================================
+ */
+
+.make-font-slim {
+  font-weight: 500;
+}
+
+/**
+ *==================================
+ * Vertical Divider
+ *==================================
+ */
+
+.vr-divide {
+  border-right: 1px solid gray;
+  height: 80px;
+  position: absolute;
+  right: 249px;
+  top: 10px;
+}
+
+/**
+ *==================================
+ * round-images
+ *==================================
+ */
+
+.gm-round-images {
+  border-radius: 10px;
+}
+
+/*--------------------------------------------------------------
+## Owl Carousel Overides
+--------------------------------------------------------------*/
+
+.owl-nav {
+  top: -85px;
+  background-color: #fff;
+  right: 0;
+  position: absolute;
+  font-size: 20px !important;
+}
+
+.owl-nav .owl-next,
+.owl-nav .owl-prev {
+  display: inline-block !important;
+  color: #eaeaea !important;
+  background-color: #d31f0d !important;
+  text-align: center !important;
+  -webkit-transition: all 0.5s ease !important;
+  transition: all 0.5s ease !important;
+  width: 36px !important;
+  height: 36px !important;
+  margin: 0 !important;
+  line-height: 36px !important;
+  outline: 0 !important;
+}
+
+.owl-nav .owl-next:hover,
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:focus,
+.owl-nav .owl-prev:focus {
+  background-color: #f13522 !important;
+}
+
+.owl-nav .owl-prev {
+  margin-right: 5px !important;
+}
+
+/**
+ *==================================
+ * Jumbtron Header
+ *==================================
+ */
+
+.jumbotron-header {
+  /**
+     *==================================
+     * custom background image
+     *==================================
+     */
+  background-image: radial-gradient(circle at 20% 50%, rgba(252, 252, 252, 0.98) 0%, rgba(252, 252, 252, 0.88) 100%);
+  /**
+     *==================================
+     * other stylings
+     *==================================
+     */
+  min-height: 400px;
+  margin-left: -50px;
+  margin-right: -50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: -30px;
+}
+
+.jumbotron-header a {
+  color: #737373;
+}
+
+.jumbotron-header a:hover,
+.jumbotron-header a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.jumbotron-header-wrapper {
+  margin-left: -50px;
+  margin-right: -50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron-header::before {
+  -webkit-filter: opacity(100) grayscale(100%) contrast(130%);
+          filter: opacity(100) grayscale(100%) contrast(130%);
+  content: "";
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  will-change: opacity;
+  -webkit-transition: -webkit-filter 1s;
+  transition: -webkit-filter 1s;
+  transition: filter 1s;
+  transition: filter 1s, -webkit-filter 1s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: block;
+}
+
+.jumbotron-header .poster-image img {
+  border-radius: 10px;
+  height: 400px;
+}
+
+.jumbotron-header .movie-title {
+  margin: 0;
+  color: #d31f0d;
+}
+
+.jumbotron-header .movie-tagline {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.jumbotron-header .movie-overview {
+  color: #333333;
+}
+
+.jumbotron-header .movie-action-buttons-wrapper {
+  margin-top: 30px;
+}
+
+.jumbotron-header .take-airr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/**
+ *==================================
+ * tab section
+ *==================================
+ */
+
+.large-tab-section {
+  margin-left: -50px;
+  margin-right: -50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #ffffff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  min-height: 60px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+}
+
+.large-tab-section .container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.large-tab-section .movies-tab-buttons a {
+  color: #333333;
+  border: 0;
+  border-radius: 19px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(35, 35, 35, 0.2);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.large-tab-section .movies-tab-buttons a:hover,
+.large-tab-section .movies-tab-buttons a:focus {
+  color: #d31f0d;
+}
+
+.large-tab-section .movies-tab-buttons li.active a {
+  background-color: #d31f0d;
+  color: white;
+}
+
+.large-tab-section .movies-tab-buttons li.active a:hover,
+.large-tab-section .movies-tab-buttons li.active a:focus {
+  background-color: #d7200d;
+}
+
+/**
+ *==================================
+ * tab content
+ *==================================
+ */
+
+.large-tab-content-sidebar {
+  margin-bottom: 50px;
+}
+
+.large-tab-content-sidebar::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.large-tab-content-sidebar .container {
+  margin-top: 10px;
+}
+
+.large-tab-content-sidebar .container h3 {
+  margin-bottom: 10px;
+}
+
+.large-tab-content-sidebar .container h5 {
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+.large-tab-content-sidebar .vr-divide {
+  top: 100px;
+  right: 312px;
+  height: 150px;
+}
+
+.large-tab-content-sidebar .scrollable-video-wrapper,
+.large-tab-content-sidebar .scrollable-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.large-tab-content-sidebar .scroll-video-gallery,
+.large-tab-content-sidebar .scroll-image-gallery {
+  height: 300px;
+  width: 1000px;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.large-tab-content-sidebar .scroll-video-gallery .single-video-frame,
+.large-tab-content-sidebar .scroll-video-gallery .single-image-frame,
+.large-tab-content-sidebar .scroll-image-gallery .single-video-frame,
+.large-tab-content-sidebar .scroll-image-gallery .single-image-frame {
+  display: inline-block;
+  width: 400px;
+  margin-right: 5px;
+}
+
+/**
+ *==================================
+ * similar movies 
+ *==================================
+ */
+
+.similar-movies-box {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.similar-movies-box::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.similar-movies-box .similar-movies-title {
+  left: 50%;
+  color: white;
+  position: absolute;
+  top: 35%;
+  text-align: center;
+}
+
+.similar-movies-box .similar-movies-title h3 {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  left: -50%;
+}
+
+.similar-movies-box .similar-movies-action {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+}
+
+.similar-movies-box .similar-movies-action button {
+  left: -50% !important;
+  position: relative;
+}
+
+.similar-movies-box img {
+  border-radius: 10px;
+  height: 350px !important;
+}
+
+.cinemas-showing-movie .similar-movie-title {
+  position: static;
+}
+
+.cinemas-showing-movie .similar-movie-title h3 {
+  position: static;
+}
+
+/**
+ *==================================
+ * Top header Section
+ *==================================
+ */
+
+.large-header-section {
+  margin-left: -50px;
+  margin-right: -50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.large-header-section .container {
+  margin-top: 0;
+}
+
+.large-header-section .container form {
+  position: relative;
+}
+
+.large-header-section .container form input#search-genres-field {
+  background-color: #ffffff;
+}
+
+.large-header-section .container form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 3px;
+  height: 43px;
+}
+
+.large-header-section .container form button::before {
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: transparent #d31f0d transparent transparent;
+  border-width: 1.25rem 2.5rem 1.25rem 0;
+  position: absolute;
+  right: 100%;
+  top: 10px;
+  content: "";
+}
+
+.large-tab-section {
+  /* Dropdown Button */
+  /* The container <div> - needed to position the dropdown content */
+  /* Show the dropdown menu (use JS to add this class to the .gm-dropdown-content container when the user clicks on the dropdown button) */
+}
+
+.large-tab-section .movies-tab-buttons.dropdown li.dropdown a {
+  border: 1px solid #ccc;
+}
+
+.large-tab-section .gm-dropbtn {
+  color: #333333;
+  outline: none;
+  border: 0;
+  border-radius: 19px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(35, 35, 35, 0.2);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  /* Dropdown button on hover & focus */
+}
+
+.large-tab-section .gm-dropbtn:hover,
+.large-tab-section .gm-dropbtn:focus {
+  color: #d31f0d;
+  background-color: #ccc;
+}
+
+.large-tab-section .gm-dropdown {
+  position: relative;
+  display: inline-block;
+  /* Dropdown Content (Hidden by Default) */
+}
+
+.large-tab-section .gm-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* Links inside the dropdown */
+}
+
+.large-tab-section .gm-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  /* Change color of dropdown links on hover */
+}
+
+.large-tab-section .gm-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.large-tab-section .gm-show {
+  display: block;
+}
+
+#movie_name,
+#movie_type,
+#movie_genre {
+  background-color: white !important;
+}
+
+.movies-search-form.search-for-movie-bar {
+  margin-top: -250px;
+  background-color: white;
+}
+
+.movies-search-form.search-for-movie-bar .container {
+  margin-top: 0;
+}
+
+.movies-search-form.search-for-movie-bar .form-control {
+  height: 40px !important;
+}
+
+.movies-search-form.search-for-movie-bar .form-control :focus {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(211, 31, 13, 0.6) !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(211, 31, 13, 0.6) !important;
+}
+
+.movies-search-form.search-for-movie-bar .button {
+  height: 40px;
+}
+
+/**
+ *
+ * Responsive Css File for the Mobile Dev of the Movies site
+ * 
+ * @author Nnamdi Anthony
+ *
+ */
+/* Common general styles go here */
+/* Mobiles in Potrait mode */
+@media only screen
+and (min-width : 321px)
+and (max-width : 480px) {
+#pgc-3801-3-1 > div > div > div{
+  width: 90%;
+}
+#panel-3801-2-0-0 > div > div{
+  margin-top: -15px !important;
+}
+ /*for the movies site*/
+  #panel-3801-2-0-0 > div > div > div{
+    margin-top:-15px !important;
+  }
+
+}
+@media only screen and (max-width : 640px){
+.listing-manager-locations{
+  width: 90% !important;
+}
+#pgc-3801-5-1 > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav{
+      margin-top: 15%;
+      margin-right: 40%;
+      margin-bottom: 40px;
+}
+#pgc-3801-5-1 > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-stage-outer{
+      width:90%;
+      margin:4%;
+}
+#panel-3801-5-1-0 > div > div{
+    width: 40%;
+    float: right;
+    margin-right: 6%;
+}
+#pgc-3801-7-1 > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav{
+      margin-top: 15%;
+      margin-right: 40%;
+      margin-bottom: 40px;
+}
+#pgc-3801-7-1 > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-stage-outer{
+      width:90%;
+      margin:4%;
+}
+#panel-3801-7-1-0 > div > div{
+    width: 40%;
+    float: right;
+    margin-right: 6%;
+}
+#pgc-3801-9-1 > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav{
+      margin-top: 15%;
+      margin-right: 40%;
+      margin-bottom: 40px;
+}
+#pgc-3801-9-1 > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-stage-outer{
+      width:90%;
+      margin:4%;
+}
+#panel-3801-9-1-0 > div > div{
+    width: 40%;
+    float: right;
+    margin-right: 6%;
+}
+#pgc-32684-1-0 > div.container > div > div:nth-child(24) > a > div > div.similiar-movies-image > img{
+  width:300px;
+}
+#pgc-32684-1-0 > div.container > div > div:nth-child(26) > a > div > div.similiar-movies-image > img{
+  width:300px;
+}
+#pgc-32684-1-0 > div.container > div > div:nth-child(29) > a > div > div.similiar-movies-image > img{
+  width:300px;
+}
+#pgc-32684-1-0 > div.container > div > div:nth-child(32) > a > div > div.similiar-movies-image > img{
+  width:300px;
+}
+#pgc-32684-1-0 > div.container > div > div:nth-child(33) > a > div > div.similiar-movies-image > img{
+  width:300px;
+}
+#pgc-32684-1-0 > div.container > div > div:nth-child(35) > a > div > div.similiar-movies-image > img{
+  width:300px;
+}
+}
